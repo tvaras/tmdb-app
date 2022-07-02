@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		153E4D7F6EBB752D7568D603 /* Pods_tmdb_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE19F1577240542B0D991EBF /* Pods_tmdb_app.framework */; };
+		869FA2B22870BC5400306DC5 /* util in Resources */ = {isa = PBXBuildFile; fileRef = 869FA2AD2870BC5400306DC5 /* util */; };
+		869FA2B32870BC5400306DC5 /* controller in Resources */ = {isa = PBXBuildFile; fileRef = 869FA2AE2870BC5400306DC5 /* controller */; };
+		869FA2B42870BC5400306DC5 /* domain in Resources */ = {isa = PBXBuildFile; fileRef = 869FA2AF2870BC5400306DC5 /* domain */; };
+		869FA2B52870BC5400306DC5 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 869FA2B02870BC5400306DC5 /* MovieCollectionViewCell.xib */; };
+		86EEFD7D2870B4700027BB8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EEFD7C2870B4700027BB8F /* AppDelegate.swift */; };
+		86EEFD7F2870B4700027BB8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EEFD7E2870B4700027BB8F /* SceneDelegate.swift */; };
+		86EEFD812870B4700027BB8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EEFD802870B4700027BB8F /* ViewController.swift */; };
+		86EEFD842870B4700027BB8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86EEFD822870B4700027BB8F /* Main.storyboard */; };
+		86EEFD862870B4720027BB8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86EEFD852870B4720027BB8F /* Assets.xcassets */; };
+		86EEFD892870B4720027BB8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86EEFD872870B4720027BB8F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5696E831465F4BD127113935 /* Pods-tmdb-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-app.release.xcconfig"; path = "Target Support Files/Pods-tmdb-app/Pods-tmdb-app.release.xcconfig"; sourceTree = "<group>"; };
+		869FA2AD2870BC5400306DC5 /* util */ = {isa = PBXFileReference; lastKnownFileType = folder; path = util; sourceTree = "<group>"; };
+		869FA2AE2870BC5400306DC5 /* controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = controller; sourceTree = "<group>"; };
+		869FA2AF2870BC5400306DC5 /* domain */ = {isa = PBXFileReference; lastKnownFileType = folder; path = domain; sourceTree = "<group>"; };
+		869FA2B02870BC5400306DC5 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		86EEFD792870B4700027BB8F /* tmdb-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tmdb-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86EEFD7C2870B4700027BB8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86EEFD7E2870B4700027BB8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		86EEFD802870B4700027BB8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86EEFD832870B4700027BB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86EEFD852870B4720027BB8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86EEFD882870B4720027BB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86EEFD8A2870B4720027BB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8904A274572EFAB951E9A8A /* Pods-tmdb-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-app.debug.xcconfig"; path = "Target Support Files/Pods-tmdb-app/Pods-tmdb-app.debug.xcconfig"; sourceTree = "<group>"; };
+		DE19F1577240542B0D991EBF /* Pods_tmdb_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmdb_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86EEFD762870B4700027BB8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153E4D7F6EBB752D7568D603 /* Pods_tmdb_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80CD87DEA988C29B2ECC11FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE19F1577240542B0D991EBF /* Pods_tmdb_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86EEFD702870B4700027BB8F = {
+			isa = PBXGroup;
+			children = (
+				86EEFD7B2870B4700027BB8F /* tmdb-app */,
+				86EEFD7A2870B4700027BB8F /* Products */,
+				F88DCCD763B097BA205EFBB1 /* Pods */,
+				80CD87DEA988C29B2ECC11FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		86EEFD7A2870B4700027BB8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86EEFD792870B4700027BB8F /* tmdb-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86EEFD7B2870B4700027BB8F /* tmdb-app */ = {
+			isa = PBXGroup;
+			children = (
+				869FA2AE2870BC5400306DC5 /* controller */,
+				869FA2AF2870BC5400306DC5 /* domain */,
+				869FA2AD2870BC5400306DC5 /* util */,
+				86EEFD7C2870B4700027BB8F /* AppDelegate.swift */,
+				86EEFD7E2870B4700027BB8F /* SceneDelegate.swift */,
+				86EEFD802870B4700027BB8F /* ViewController.swift */,
+				869FA2B02870BC5400306DC5 /* MovieCollectionViewCell.xib */,
+				86EEFD822870B4700027BB8F /* Main.storyboard */,
+				86EEFD852870B4720027BB8F /* Assets.xcassets */,
+				86EEFD872870B4720027BB8F /* LaunchScreen.storyboard */,
+				86EEFD8A2870B4720027BB8F /* Info.plist */,
+			);
+			path = "tmdb-app";
+			sourceTree = "<group>";
+		};
+		F88DCCD763B097BA205EFBB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8904A274572EFAB951E9A8A /* Pods-tmdb-app.debug.xcconfig */,
+				5696E831465F4BD127113935 /* Pods-tmdb-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86EEFD782870B4700027BB8F /* tmdb-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86EEFD8D2870B4720027BB8F /* Build configuration list for PBXNativeTarget "tmdb-app" */;
+			buildPhases = (
+				21E551B226696DAE40829D77 /* [CP] Check Pods Manifest.lock */,
+				86EEFD752870B4700027BB8F /* Sources */,
+				86EEFD762870B4700027BB8F /* Frameworks */,
+				86EEFD772870B4700027BB8F /* Resources */,
+				1AF6214FC0D2F7405C95CC78 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tmdb-app";
+			productName = "tmdb-app";
+			productReference = 86EEFD792870B4700027BB8F /* tmdb-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86EEFD712870B4700027BB8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					86EEFD782870B4700027BB8F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 86EEFD742870B4700027BB8F /* Build configuration list for PBXProject "tmdb-app" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86EEFD702870B4700027BB8F;
+			productRefGroup = 86EEFD7A2870B4700027BB8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86EEFD782870B4700027BB8F /* tmdb-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86EEFD772870B4700027BB8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86EEFD892870B4720027BB8F /* LaunchScreen.storyboard in Resources */,
+				86EEFD862870B4720027BB8F /* Assets.xcassets in Resources */,
+				869FA2B42870BC5400306DC5 /* domain in Resources */,
+				869FA2B22870BC5400306DC5 /* util in Resources */,
+				86EEFD842870B4700027BB8F /* Main.storyboard in Resources */,
+				869FA2B32870BC5400306DC5 /* controller in Resources */,
+				869FA2B52870BC5400306DC5 /* MovieCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AF6214FC0D2F7405C95CC78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tmdb-app/Pods-tmdb-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tmdb-app/Pods-tmdb-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tmdb-app/Pods-tmdb-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21E551B226696DAE40829D77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tmdb-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86EEFD752870B4700027BB8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86EEFD812870B4700027BB8F /* ViewController.swift in Sources */,
+				86EEFD7D2870B4700027BB8F /* AppDelegate.swift in Sources */,
+				86EEFD7F2870B4700027BB8F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		86EEFD822870B4700027BB8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86EEFD832870B4700027BB8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86EEFD872870B4720027BB8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86EEFD882870B4720027BB8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86EEFD8B2870B4720027BB8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86EEFD8C2870B4720027BB8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86EEFD8E2870B4720027BB8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8904A274572EFAB951E9A8A /* Pods-tmdb-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76G5MLU9S8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tmdb-app/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cl.tvaras.tmdb-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		86EEFD8F2870B4720027BB8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5696E831465F4BD127113935 /* Pods-tmdb-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76G5MLU9S8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tmdb-app/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cl.tvaras.tmdb-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86EEFD742870B4700027BB8F /* Build configuration list for PBXProject "tmdb-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86EEFD8B2870B4720027BB8F /* Debug */,
+				86EEFD8C2870B4720027BB8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86EEFD8D2870B4720027BB8F /* Build configuration list for PBXNativeTarget "tmdb-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86EEFD8E2870B4720027BB8F /* Debug */,
+				86EEFD8F2870B4720027BB8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86EEFD712870B4700027BB8F /* Project object */;
+}
