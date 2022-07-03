@@ -14,7 +14,6 @@ class PopularMoviesViewController: UIViewController,  MyCellDelegate {
     @IBOutlet weak var moviesCollectionView: UICollectionView!
     
     var results : [PopularMovie] = []
-//    var selectedMovieId: String!
     
     override func viewDidLoad() {
         
@@ -31,7 +30,6 @@ class PopularMoviesViewController: UIViewController,  MyCellDelegate {
     
     func cellWasPressed(selectedMovieId: String) {
         
-//        self.selectedMovieId = selectedMovieId
         performSegue(withIdentifier: "MovieDetailVC", sender: selectedMovieId)
     }
     
