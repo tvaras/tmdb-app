@@ -9,11 +9,12 @@ import Foundation
 import UIKit
 import Alamofire
 
-class PopularMoviesViewController: UIViewController {
+class PopularMoviesViewController: UIViewController,  MyCellDelegate {
     
     @IBOutlet weak var moviesCollectionView: UICollectionView!
     
     var results : [PopularMovie] = []
+//    var selectedMovieId: String!
     
     override func viewDidLoad() {
         
@@ -22,13 +23,26 @@ class PopularMoviesViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 180, height: 200)
         moviesCollectionView.collectionViewLayout = layout
-        
-        moviesCollectionView.register(MovieCollectionViewCell.nib(), forCellWithReuseIdentifier: MovieCollectionViewCell.identifier)
         moviesCollectionView.delegate = self
         moviesCollectionView.dataSource = self
         
         setupView()
     }
+    
+    func cellWasPressed(selectedMovieId: String) {
+        
+//        self.selectedMovieId = selectedMovieId
+        performSegue(withIdentifier: "MovieDetailVC", sender: selectedMovieId)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       if (segue.identifier == "MovieDetailVC") {
+          let detailView = segue.destination as! MovieDetailViewController
+          let selectedMovieId = sender as! String
+           detailView.movieId = selectedMovieId
+       }
+    }
+
     
     func setupView() {
         print("popular_movies_endpoint: \(Endpoints.popularMovies)")
@@ -84,7 +98,6 @@ class PopularMoviesViewController: UIViewController {
                     }
                 }))
                 self.present(alert, animated: true, completion: nil)
-                
                
             }
         }
@@ -112,25 +125,25 @@ extension PopularMoviesViewController: UICollectionViewDataSource {
         
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieCollViewCell.identifier, for: indexPath) as! MovieCollViewCell
         
-        print("voy a llenaar")
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieCollectionViewCell.identifier, for: indexPath) as! MovieCollectionViewCell
-        
+        cell.delegate = self
         //se valida que la película en el índice x tenga datos
         cell.configure(with: results[indexPath.row])
+        
         
         return cell
         
     }
     
 }
-    
-    // hacer mas adelante
-//extension PopularMoviesViewController: UICollectionViewDelegateFlowLayout {
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//
-//        return CGSize(width: 140, height: 160)
-//    }
-//}
+    // revisar mas adelante
+extension PopularMoviesViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 190, height: 250)
+    }
+}
+
+protocol MyCellDelegate {
+    func cellWasPressed(selectedMovieId: String)
+}
