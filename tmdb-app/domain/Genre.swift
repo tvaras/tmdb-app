@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Genre {
+struct Genre: Codable {
     
-    var id: Int
-    var name: String
+    var id: Int?
+    var name: String?
 }

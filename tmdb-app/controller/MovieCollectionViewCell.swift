@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIImageView {
+extension UIButton {
     
     func downloaded(from url: URL, contentMode mode: ContentMode = .scaleAspectFit) {
         contentMode = mode
@@ -19,7 +19,7 @@ extension UIImageView {
                 let image = UIImage(data: data)
                 else { return }
             DispatchQueue.main.async() { [weak self] in
-                self?.image = image
+                self?.setImage(image, for: .normal)
             }
         }.resume()
     }
@@ -31,9 +31,13 @@ extension UIImageView {
 
 class MovieCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet var movieImage: UIImageView!
+    //@IBOutlet var movieImage: UIImageView!
+    
+    @IBOutlet weak var movieImage: UIButton!
     @IBOutlet var movieName: UILabel!
     @IBOutlet var movieToFavs: UIButton!
+    
+    var movieId: String!
     
     static let identifier = "MovieCollectionViewCell"
     
@@ -42,6 +46,19 @@ class MovieCollectionViewCell: UICollectionViewCell {
         
     }
 
+    @IBAction func movieImageTapped(_ sender: Any) {
+        
+        guard let movId = movieId else {
+            return
+        }
+        
+//        var controller = storyboard?.instantiateViewController(withIdentifier: "movId") as! MovieDetailViewController
+//
+//        controller.movieId = movId
+        
+        print("movie_selected: \(movId)")
+    }
+    
     public func configure(with movie: PopularMovie) {
         
         if let urlImg : String = movie.backdropPath {
@@ -50,6 +67,7 @@ class MovieCollectionViewCell: UICollectionViewCell {
             
         }
     
+        self.movieId = String(movie.id)
         self.movieName.text = movie.title
     }
     

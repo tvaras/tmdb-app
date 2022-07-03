@@ -16,6 +16,8 @@
 		869FA2C42870F9F900306DC5 /* PopularMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869FA2C22870F9F900306DC5 /* PopularMovie.swift */; };
 		869FA2C52870F9F900306DC5 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869FA2C32870F9F900306DC5 /* Genre.swift */; };
 		869FA2C72870FA1000306DC5 /* PopularMovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869FA2C62870FA1000306DC5 /* PopularMovieResponse.swift */; };
+		869FA2C928712B8F00306DC5 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869FA2C828712B8F00306DC5 /* MovieDetailViewController.swift */; };
+		869FA2CC28712C7200306DC5 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869FA2CB28712C7200306DC5 /* MovieDetail.swift */; };
 		86EEFD7D2870B4700027BB8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EEFD7C2870B4700027BB8F /* AppDelegate.swift */; };
 		86EEFD7F2870B4700027BB8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EEFD7E2870B4700027BB8F /* SceneDelegate.swift */; };
 		86EEFD812870B4700027BB8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EEFD802870B4700027BB8F /* ViewController.swift */; };
@@ -34,6 +36,8 @@
 		869FA2C22870F9F900306DC5 /* PopularMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularMovie.swift; sourceTree = "<group>"; };
 		869FA2C32870F9F900306DC5 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		869FA2C62870FA1000306DC5 /* PopularMovieResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularMovieResponse.swift; sourceTree = "<group>"; };
+		869FA2C828712B8F00306DC5 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		869FA2CB28712C7200306DC5 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		86EEFD792870B4700027BB8F /* tmdb-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tmdb-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EEFD7C2870B4700027BB8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86EEFD7E2870B4700027BB8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 				869FA2BB2870F96A00306DC5 /* MovieCollectionViewCell.swift */,
 				869FA2B82870F94C00306DC5 /* FavoriteViewController.swift */,
 				869FA2B72870F94B00306DC5 /* PopularMoviesViewControlller.swift */,
+				869FA2C828712B8F00306DC5 /* MovieDetailViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 		869FA2BD2870F9AF00306DC5 /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				869FA2CB28712C7200306DC5 /* MovieDetail.swift */,
 				869FA2C32870F9F900306DC5 /* Genre.swift */,
 				869FA2C22870F9F900306DC5 /* PopularMovie.swift */,
 				869FA2BF2870F9C100306DC5 /* response */,
@@ -266,12 +272,14 @@
 				869FA2C52870F9F900306DC5 /* Genre.swift in Sources */,
 				869FA2C42870F9F900306DC5 /* PopularMovie.swift in Sources */,
 				86EEFD812870B4700027BB8F /* ViewController.swift in Sources */,
+				869FA2CC28712C7200306DC5 /* MovieDetail.swift in Sources */,
 				86EEFD7D2870B4700027BB8F /* AppDelegate.swift in Sources */,
 				869FA2B92870F94C00306DC5 /* PopularMoviesViewControlller.swift in Sources */,
 				869FA2C12870F9E000306DC5 /* Endpoints.swift in Sources */,
 				869FA2BC2870F96A00306DC5 /* MovieCollectionViewCell.swift in Sources */,
 				86EEFD7F2870B4700027BB8F /* SceneDelegate.swift in Sources */,
 				869FA2BA2870F94C00306DC5 /* FavoriteViewController.swift in Sources */,
+				869FA2C928712B8F00306DC5 /* MovieDetailViewController.swift in Sources */,
 				869FA2C72870FA1000306DC5 /* PopularMovieResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,10 +16,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="175" height="195"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nw9-mq-cC9">
-                        <rect key="frame" x="0.0" y="0.0" width="196" height="138"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="movieName" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beY-UJ-uPg">
                         <rect key="frame" x="6" y="144" width="135" height="54"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -33,17 +29,26 @@
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="favorite_gray_icon"/>
                     </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxH-Tc-liq">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="150"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        <connections>
+                            <action selector="movieImageTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="naF-Em-LXQ"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" red="0.1764705882352941" green="0.18823529411764706" blue="0.27843137254901962" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
             <size key="customSize" width="196" height="205"/>
             <connections>
-                <outlet property="movieImage" destination="nw9-mq-cC9" id="pOc-XD-v2t"/>
+                <outlet property="movieImage" destination="jxH-Tc-liq" id="zmv-pO-Kex"/>
                 <outlet property="movieName" destination="beY-UJ-uPg" id="EAh-V8-SEv"/>
                 <outlet property="movieToFavs" destination="LdG-iD-e7i" id="xIL-Zb-Vcf"/>
             </connections>
-            <point key="canvasLocation" x="65.217391304347828" y="98.102678571428569"/>
+            <point key="canvasLocation" x="64.492753623188406" y="98.102678571428569"/>
         </collectionViewCell>
     </objects>
     <resources>
