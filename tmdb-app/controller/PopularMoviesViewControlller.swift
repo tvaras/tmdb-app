@@ -9,11 +9,14 @@ import Foundation
 import UIKit
 import Alamofire
 
-class PopularMoviesViewController: UIViewController,  MyCellDelegate {
+var favoriteList = [MovFavTmdb]()
+
+class PopularMoviesViewController: UIViewController,  MyCellDelegate{
     
     @IBOutlet weak var moviesCollectionView: UICollectionView!
     
     var results : [PopularMovie] = []
+    
     
     override func viewDidLoad() {
         
@@ -101,6 +104,7 @@ class PopularMoviesViewController: UIViewController,  MyCellDelegate {
         }
         
     }
+    
 }
 
 extension PopularMoviesViewController: UICollectionViewDelegate {
@@ -128,7 +132,6 @@ extension PopularMoviesViewController: UICollectionViewDataSource {
         cell.delegate = self
         //se valida que la película en el índice x tenga datos
         cell.configure(with: results[indexPath.row])
-        
         
         return cell
         

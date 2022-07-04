@@ -40,6 +40,8 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var movieYear: UILabel!
     @IBOutlet weak var movieGenre: UILabel!
     @IBOutlet weak var movieOverview: UITextView!
+    @IBOutlet weak var spinnerNew: UIActivityIndicatorView!
+    var contadorGlobal:Int = 0
     
     override func viewDidLoad() {
         
@@ -48,6 +50,12 @@ class MovieDetailViewController: UIViewController {
         setupView()
         
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(true)
+//
+//        createTimer()
+//    }
     
     func setupView() {
         
@@ -147,5 +155,23 @@ class MovieDetailViewController: UIViewController {
         return yearString
         
     }
+    
+//    func createTimer(){
+//
+//        spinnerIngreso.isHidden = false
+//        spinnerIngreso.startAnimating()
+//
+//        let timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: false)
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now()+5) {
+//            timer.fire()
+//        }
+//    @objc func fireTimer() {
+//
+//        spinnerNew.hidesWhenStopped = true
+//        spinnerNew.stopAnimating()
+//
+//    }
 }
+
 
