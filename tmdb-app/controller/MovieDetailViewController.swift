@@ -92,7 +92,8 @@ class MovieDetailViewController: UIViewController {
             
                 self.movieName.text = self.movieDetail.title
                 self.movieOverview.text = self.movieDetail.overview
-                //self.movieGenre.text = (self.movieDetail.genres.map {(genre) -> genre.description}).joined(separator: ",")
+                self.movieYear.text = self.getYearAsString(strDate: self.movieDetail.releaseDate!)
+                self.movieGenre.text = self.namesToString(arr: self.movieDetail.genres!)
 
             } catch let error {
                 
@@ -118,6 +119,32 @@ class MovieDetailViewController: UIViewController {
                
             }
         }
+        
+    }
+    
+    func namesToString(arr: [Genre]?) -> String {
+        var results: [String] = []
+        if let genres = arr {
+            for genre in genres {
+                if genre.name != nil {
+                    results.append(genre.name!)
+                }
+            }
+            return results.joined(separator: ", ")
+        }
+        return ""
+    }
+    
+    func getYearAsString(strDate: String?) -> String {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy'-'MM'-'dd"
+        let date = dateFormatter.date(from: strDate!)
+        
+        dateFormatter.dateFormat = "yyyy"
+        let yearString = dateFormatter.string(from: date!)
+        
+        return yearString
         
     }
 }
