@@ -56,7 +56,7 @@ class MovieCollViewCell: UICollectionViewCell, UIGestureRecognizerDelegate {
     
     @IBAction func addFavorite(_ sender: UIButton) {
         
-        /// ERROR in class AppDelegate: +entityForName: nil is not a legal NSManagedObjectContext parameter searching for entity name
+        /// ERROR in class AppDelegate: +entityForName: nil is not a legal NSManagedObjectContext parameter searching for entity name "MovFavTmdb"
         
 //        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
 //        let entity = NSEntityDescription.entity(forEntityName: "MovFavTmdb", in: context)
